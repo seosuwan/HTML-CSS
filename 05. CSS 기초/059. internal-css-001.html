@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부 스타일 시트</title>
+    <style>
+        /*ul 태그 선택자 - 모든 ul 태그에 스타일 적용*/
+        ul {
+            color: blue; /* 목록의 글자색 */
+            list-style-type: square; /* 불릿 형태 : 사각형 */
+        }
+    </style>
+</head>
+<body>
+    <img src="images/sydney.png" alt="시드니 오페라 하우스">
+    <h1>세계 3대 미항</h1>
+    <ul>
+        <!--자식요소인 li에 스타일을 별도로 지정하지 않으면 부모 요소인 ul 태그의 스타일을 상속받음-->
+        <li>시드니(Sydney), 호주</li>
+        <li>리우데자네이루(Rio de Janeiro), 브라질</li>
+        <li>나폴리(Naples), 이탈리아</li>
+    </ul>
+</body>
+</html>

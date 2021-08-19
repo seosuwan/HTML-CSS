@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        ul li {
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function dwn() {
+            //progress 태그 변수로 선언
+            var bar = document.getElementById("bar");
+            //span 태그 변수로 선언
+            var progress = document.getElementById("progress");
+            var loaded = 0;
+
+            //0.5초마다 실행될 메소드 정의
+            var load = function() {
+                loaded+=5;
+                bar.value = loaded;
+
+                //progress value 값이 100이 되면 정의해놓은 setInterval 클리어
+                if(loaded == 100) {
+                    clearInterval(dummyLoad);
+                }
+            };
+
+            //setInterval 일정 기간마다 동일한 동작 실행
+            var dummyLoad = setInterval(function() {
+                load();
+            }, 500);
+        }
+    </script>
+    <!--onclick 이벤트에서 javascript 메소드 실행-->
+    <button type="button" onclick="dwn()">다운로드 시작</button>
+    <progress id="bar" value="0" max="100">
+        <span id="progress"> </span>
+    </progress>
+</body>
+</html>

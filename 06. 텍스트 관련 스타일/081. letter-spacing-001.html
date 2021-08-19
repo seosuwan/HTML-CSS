@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter-spacing와 word-spacing</title>
+    <style>
+        h1 {font-size:40px;} /* 글자 크기 */
+        .letter1 {
+            /*글자와 글자 사이의 간격 조절*/
+            letter-spacing: 0.2em;  /* 자간 */
+        }
+        .letter2 {
+            letter-spacing: 0.5em; /* 자간 */
+        }
+        .letter3 {
+            /*단어와 단어 사이의 간격 조절*/
+            word-spacing: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5</h1>
+    <h1 class="letter1">HTML5</h1>
+    <h1 class="letter2">HTML5</h1>
+    <h1>HTML5 CSS3</h1>
+    <h1 class="letter3">HTML5 CSS3</h1>
+</body>
+</html>

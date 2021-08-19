@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-shadow</title>
+    <style>
+        body { background:#222;}  /* 문서 배경색 */
+        h1 { 
+        font-size:80px;  /* 글자 크기 */
+        font-family:"Arial Rounded MT";  /* 글꼴 */
+        letter-spacing:4px; /* 자간 */
+        }
+        .shadow3 {
+        color: #000; /* 글자색 */
+        /*그림자 중첩시켜 불타는 그림자 효과*/
+        text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -19px 18px #f20;  /* 텍스트 그림자 */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="shadow3">암 온더 넥스트!!!레벨!!!!!!!!!</h1>
+</body>
+</html>
