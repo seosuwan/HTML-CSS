@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형 그러데이션</title>
+    <style>
+        div {
+            width:500px;
+            height:300px;
+        }
+        .grad {
+            background: #06f; /* css3 미지원 브라우저 */
+            background-image: -webkit-linear-gradient(top, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+            background-image: -moz-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+            background: -o-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+            /*위쪽에서 아래방향으로 파란색->흰색 그라데이션 효과 발생*/
+            /*높이 30%에서 그라데이션 효과 중단 후 다시 흰색->파란색 그라데이션 효과 발생*/
+            background: linear-gradient(to bottom, #06f, white 30%, #06f); /* 최신 모던 브라우저 */
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+</body>
+</html>
