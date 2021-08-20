@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진</title>
+	<style>
+		.box {
+			width:200px;  /* 너비 */
+			height:300px;  /* 높이 */
+			background:#ff6a00;  /* 배경색 */
+            /*
+              좌우 마진이 auto로 지정하면 요소의 너비 값을 뺀 나머지 공간의 좌우 마진을 똑같이 맞춤
+              브라우저 창이 확대되거나 축소되어도 가운데 있음
+            */			 
+			margin:0 auto; /* 마진 - 0 auto 0 auto */
+		}  
+	</style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

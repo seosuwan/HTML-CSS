@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디우스</title>
+	<style>
+		div {
+			width: 300px; /* 너비 */
+			height: 200px; /* 높이 */
+			margin : 20px; /* 영역간 마진 */
+			display: inline-block; /* 가로로 배치 */
+		}
+		.round {
+			border:2px solid red; /* 2px짜리 빨강 실선 */
+			border-radius:20px;  /* 모서리 20px 만큼 라운딩 */
+		}
+        .round1 {
+			border:2px solid red; /* 2px짜리 빨강 실선 */
+			border-top-left-radius:20px;  /* 모서리 20px 만큼 라운딩 */
+            border-top-right-radius:20px;  /* 모서리 20px 만큼 라운딩 */
+		}
+        .round2 {
+			border:2px solid red; /* 2px짜리 빨강 실선 */
+			border-radius:20px 70px;  /* 모서리 20px 만큼 라운딩 */
+		}
+		#bg {
+			background:url(images/pic1.jpg) no-repeat; /* 배경 이미지 */
+			background-size:cover; /* 영역을 다 채우게*/ 
+		}
+        #bg1 {
+			background:url(images/pic1.jpg) no-repeat; /* 배경 이미지 */
+			background-size:cover; /* 영역을 다 채우게*/ 
+		}
+        #bg2 {
+			background:url(images/pic1.jpg) no-repeat; /* 배경 이미지 */
+			background-size:cover; /* 영역을 다 채우게*/ 
+		}
+	</style>
+</head>
+<body>
+    <div class="round"></div>
+	<div class="round" id="bg"></div>
+    <div class="round1" id="bg1"></div>
+    <div class="round2" id="bg2"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 그림자</title>
+	<style>
+		div {
+			width:200px;
+			height:100px;
+			display:inline-block;
+			margin:15px;
+			border:2px solid;
+			border-radius:20px;
+		}
+        /*수평거리 2px, 수직거리 -2px, 흐림정도 5px, 번짐정도 0px, 그림자 색상 검정*/
+		.box1{ box-shadow:2px -2px 5px 0px black;}
+        /*수평거리 5px, 수직거리 5px, 흐림정도 15px, 번짐정도 5px, 그림자 색상 회색*/
+		.box2{ box-shadow:5px 5px 15px 5px gray;}
+	</style>
+</head>
+<body>
+    <div class="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>
